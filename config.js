@@ -28,12 +28,12 @@ module.exports = {
           logging: false,
         }),
   HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
-  SUDO: process.env.SUDO || '',
+  SUDO: process.env.SUDO || '918371079335,994407122025',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
-  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,LyFE',
-  ALWAYS_ONLINE: process.env.ALWAYS_ONLINE,
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || 'RajWhatsApp,+994407122025',
+  ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || true,
   LOG_MSG: toBool(process.env.LOG_MSG) || false,
   RMBG_KEY: process.env.RMBG_KEY || 'null',
   BAILEYS_LOG_LVL: process.env.BAILEYS_LOG_LVL || 'silent',
@@ -59,12 +59,12 @@ module.exports = {
   GPT: (process.env.GPT || 'free').trim(),
   MODEL: (process.env.MODEL || 'gpt-3.5-turbo').trim(),
   APPROVE: (process.env.APPROVE || '').trim(),
-  ANTI_DELETE: (process.env.ANTI_DELETE || 'null').trim(),
+  ANTI_DELETE: (process.env.ANTI_DELETE || 'true').trim(),
   PERSONAL_MESSAGE: (process.env.PERSONAL_MESSAGE || 'null').trim(),
   DISABLE_START_MESSAGE: process.env.DISABLE_START_MESSAGE
     ? toBool(process.env.DISABLE_START_MESSAGE)
     : false,
-  ANTI_BOT: (process.env.ANTI_BOT || 'off').trim(),
+  ANTI_BOT: (process.env.ANTI_BOT || 'on').trim(),
   ANTI_BOT_MESSAGE: process.env.ANTI_BOT_MESSAGE || '&mention removed',
   WARN_MESSAGE:
     process.env.WARN_MESSAGE ||
