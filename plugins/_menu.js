@@ -93,7 +93,7 @@ bot.addCommand(
       }
     })
     const [date, time] = getDate()
-    let msg = `\`\`\`╭═══ RAJ-BOT-OFC ═══⊷
+    let msg = `\`\`\`╭═══★★𝗥𝐀𝐉-𝐁𝐎𝐓-𝐎𝐅𝐂★★═══⊷
 ┃❃╭──────────────
 ┃❃│ Prefix : ${PREFIX}
 ┃❃│ User : ${message.pushName}
