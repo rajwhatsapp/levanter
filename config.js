@@ -9,7 +9,7 @@ const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || 'levanter_20ee35d4d62d334a11aa37428a4dea9a9d').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_20221f07000dac411da859f1fe769e351e').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -27,7 +27,7 @@ module.exports = {
           },
           logging: false,
         }),
-  HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+  HANDLERS: (process.env.PREFIX || 'null').trim(),
   SUDO: process.env.SUDO || '918371079335,994407122025',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
